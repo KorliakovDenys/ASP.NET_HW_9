@@ -1,0 +1,16 @@
+@page
+@model ASP.NET_HW_9.Pages.NameInput
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="POST" asp-page-handler="Name">
+    <div class="form-control">
+        <div class="input-group mb-3">
+            <label for="nameInput" class="input-group-text">Your name:</label>
+            <input id="nameInput" name="name" type="text" class="form-control">
+        </div>
+        <button class="btn btn-primary form-control">Save</button>
+    </div>
+</form>
